@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="530.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FarmacistController">
+   <children>
+      <TableView fx:id="tabelComenzi" layoutX="35.0" layoutY="37.0" prefHeight="200.0" prefWidth="378.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Id">
+            <cellValueFactory>
+                <PropertyValueFactory property="id" />
+            </cellValueFactory>
+        </TableColumn>
+          <TableColumn prefWidth="90.0" text="IdMedicament">
+              <cellValueFactory>
+                  <PropertyValueFactory property="idMedicament" />
+              </cellValueFactory>
+          </TableColumn>
+            <TableColumn prefWidth="97.0" text="DataExpedierii">
+                <cellValueFactory>
+                    <PropertyValueFactory property="dataExpedierii" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="56.0" text="Status">
+                <cellValueFactory>
+                    <PropertyValueFactory property="status" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="57.0" text="Nivel">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nivel" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Label layoutX="35.0" layoutY="14.0" prefHeight="17.0" prefWidth="148.0" text="Vizualizeaza Lista Comenzi" />
+      <Button layoutX="433.0" layoutY="37.0" mnemonicParsing="false" text="Onoreaza Comanda" onMouseClicked="#onoreazaComanda"/>
+      
+   </children>
+</AnchorPane>

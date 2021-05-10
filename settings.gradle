@@ -1,0 +1,7 @@
+rootProject.name = 'SoftFarmacie'
+include 'Model'
+include 'Persistance'
+include 'Server'
+include 'Services'
+include 'Client'
+

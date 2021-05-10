@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name = "spital.Comanda"
+           table="Comanda">
+        <id name = "id" column = "id">
+            <generator class="increment"/>
+        </id>
+        <property name="dataExpedierii" column="dataExpedierii"/>
+        <property name="status" column="status"/>
+        <property name="nivel" column="nivel"/>
+        <property name="idMedicament" column="idMedicament"/>
+
+    </class>
+
+</hibernate-mapping>

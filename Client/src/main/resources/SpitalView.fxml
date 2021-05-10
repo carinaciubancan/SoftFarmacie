@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="676.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MedicController">
+   <children>
+      <TableView fx:id="tabelComenzi" layoutX="35.0" layoutY="37.0" prefHeight="200.0" prefWidth="339.0">
+        <columns>
+          <TableColumn prefWidth="50.0" text="Id">
+            <cellValueFactory>
+                <PropertyValueFactory property="id" />
+            </cellValueFactory>
+        </TableColumn>
+          <TableColumn prefWidth="104.0" text="IdMedicament">
+              <cellValueFactory>
+                  <PropertyValueFactory property="idMedicament" />
+              </cellValueFactory>
+          </TableColumn>
+            <TableColumn prefWidth="94.0" text="DataExpedierii">
+                <cellValueFactory>
+                    <PropertyValueFactory property="dataExpedierii" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="44.0" text="Status">
+                <cellValueFactory>
+                    <PropertyValueFactory property="status" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="45.0" text="Nivel">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nivel" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Label layoutX="149.0" layoutY="14.0" prefHeight="17.0" prefWidth="148.0" text="Vizualizeaza Lista Comenzi" />
+      <Button layoutX="433.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#stergeComanda" text="Anuleaza Comanda" />
+      <TableView fx:id="tabelMedicamente" layoutX="35.0" layoutY="280.0" onMouseClicked="#selectMedicament" prefHeight="200.0" prefWidth="297.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Id">
+            <cellValueFactory>
+                <PropertyValueFactory property="id" />
+            </cellValueFactory>
+        </TableColumn>
+          <TableColumn prefWidth="75.0" text="Nume">
+            <cellValueFactory>
+                <PropertyValueFactory property="nume" />
+            </cellValueFactory>
+        </TableColumn>
+            <TableColumn prefWidth="75.0" text="Gramaj">
+            <cellValueFactory>
+                <PropertyValueFactory property="gramaj" />
+            </cellValueFactory>
+        </TableColumn>
+            <TableColumn prefWidth="75.0" text="NrBuc">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nrBuc" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Label layoutX="75.0" layoutY="254.0" text="Lista produselor din stocul farmaciei" />
+      <Label layoutX="400.0" layoutY="254.0" text="Adauga o comanda" />
+      <TextField fx:id="textField1" layoutX="430.0" layoutY="288.0" />
+      <Label layoutX="339.0" layoutY="292.0" text="Id Medicament" />
+      <Label layoutX="341.0" layoutY="363.0" text="Gramaj" />
+      <Button fx:id="buttonTrimiteComanda" layoutX="390.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#trimiteComanda" prefHeight="25.0" prefWidth="169.0" text="Trimite Comanda" />
+      <Label layoutX="349.0" layoutY="330.0" text="Nume" />
+      <Label layoutX="41.0" layoutY="496.0" text="Cauta Medicament" />
+      <Label layoutX="149.0" layoutY="496.0" text="dupa denumire si gramaj" />
+      <TextField fx:id="textFieldMedicament" layoutX="141.0" layoutY="520.0" />
+      <Label layoutX="42.0" layoutY="524.0" text="Medicament" />
+      <Button fx:id="buttonCautare" layoutX="142.0" layoutY="556.0" mnemonicParsing="false" onMouseClicked="#cautareMedicament" prefHeight="9.0" prefWidth="148.0" text="Cautare" />
+      <TextField fx:id="textField3" layoutX="430.0" layoutY="359.0" />
+      <Label layoutX="341.0" layoutY="394.0" prefHeight="17.0" prefWidth="49.0" text="Nr Bucati" />
+      <TextField fx:id="textField2" layoutX="430.0" layoutY="326.0" />
+      <TextField fx:id="textField4" layoutX="430.0" layoutY="390.0" />
+      <Label layoutX="341.0" layoutY="424.0" prefHeight="17.0" prefWidth="49.0" text="Nivel" />
+      <TextField fx:id="textField5" layoutX="430.0" layoutY="420.0" />
+      <Button fx:id="buttonRefresh" layoutX="142.0" layoutY="587.0" mnemonicParsing="false" onMouseClicked="#refreshMedicamente" prefHeight="25.0" prefWidth="148.0" text="Refresh" />
+   </children>
+</AnchorPane>
